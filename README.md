@@ -1,1 +1,0 @@
-# Lari-skz.github.io
