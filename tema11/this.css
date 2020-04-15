@@ -1,0 +1,26 @@
+h1{text-align:center;
+   color:#290955;
+   font-family:Fantasy}
+h2{font-size:120%;
+   color:#735d92;
+   font-family:Sans-serif}
+h3{font-size:150%;
+   color:#735d92;}
+table{border-style:double;
+     border width:8px;
+	 border-color:#290955;
+	 text-align:center;
+	 color:#492f6d;
+	 font-size:120%;
+	 font-family:Times}
+th, td {
+padding: 15px;}
+button{
+  background-color:black; 
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;}
