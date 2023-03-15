@@ -1,0 +1,68 @@
+import UIKit
+
+protocol NutritionalValues {
+    func isTooFat() -> Bool
+    func caloriesAndProtein()
+}
+
+class FastFood : NutritionalValues {
+    var calories: Int
+    var protein: Int
+    func isTooFat() -> Bool {
+      return calories > 450
+    }
+    
+    init(calories: Int, protein: Int) {
+        self.calories = calories
+        self.protein = protein
+    }
+    
+    func caloriesAndProtein() {
+        print("Detalii despre produs:")
+        print("Calorii = \(calories)")
+        print("Proteine = \(protein)")
+    }
+}
+    
+struct HealthyFood : NutritionalValues {
+    var calories: Int
+    var protein: Int
+    
+    func isTooFat() -> Bool {
+        return calories > 450
+    }
+    
+    init(calories: Int, protein: Int) {
+        self.calories = calories
+        self.protein = protein
+    }
+    
+    func caloriesAndProtein() {
+        print("Detalii despre produs:")
+        print("Calorii = \(calories)")
+        print("Proteine = \(protein)")
+    }
+}
+        
+let food1 = FastFood(calories : 600, protein : 30)
+print ("Is the food too fat? \(food1.isTooFat())")
+food1.caloriesAndProtein()
+
+print("\n")
+
+let food2 = FastFood(calories: 430, protein: 24)
+print("Is the food too fat? \(food2.isTooFat())")
+food2.caloriesAndProtein()
+
+print("\n")
+
+let food3 = HealthyFood(calories : 237, protein : 46)
+print("Is the food too fat? \(food3.isTooFat())")
+food3.caloriesAndProtein()
+    
+print("\n")
+
+let food4 = HealthyFood(calories : 800, protein : 70)
+print("Is the food too fat? \(food4.isTooFat())")
+food4.caloriesAndProtein()
+
